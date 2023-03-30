@@ -16,7 +16,7 @@ class IntellectMoney {
     static async request(method, data, signHash) {
         let url = `https://api.intellectmoney.ru/p2p/${method}?`;
         let counter = 0;
-        for (const key in data) { url += `${counter++ === 0 ? '' : '&'}${key}=${data[key]}` };ы
+        for (const key in data) { url += `${counter++ === 0 ? '' : '&'}${key}=${data[key]}` };
         
         const request = await fetch(
             url,
